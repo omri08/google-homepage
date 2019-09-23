@@ -1,0 +1,1 @@
+In this project I tried to copy the google homepage to practice my css/html skills
