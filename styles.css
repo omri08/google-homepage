@@ -1,51 +1,98 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 40.5px 835px 81px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40.5px 835px 81px;
 }
 
 nav {
-    grid-column: 1 / span 3;
-    grid-row: 1 /2;
-    background-color: blue;
-    display: flex;
-    flex-direction: row;
+  grid-column: 1 / span 3;
+  grid-row: 1 /2;
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
 }
 
 main {
-    grid-column: 2 / 3;
-    grid-row: 2 /3;
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  grid-column: 2 / 3;
+  grid-row: 2 /3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  color: #5f6368;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  text-align: center;
+  height: 36px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f2f2f2;
 }
 
+button:hover {
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #222;
+  background-color: #f8f8f8;
+}
 footer {
-    grid-column: 1 / span 3;
-    grid-row: 3 /span 1;
-    background-color: blue;
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 1;
+  background-color: blue;
 }
 
 .nav-items {
-    justify-content: start;
-    padding: 7px 7px 0 7px;
+  justify-content: start;
+  padding: 7px 7px 0 7px;
 }
 
 .main-items {
-    padding: 20px;
+  padding: 20px;
 }
 
 .footer-items {
-    justify-self: end;
+  justify-self: end;
 }
 
 .google-logo {
-    padding-top: 20%;
+  padding-top: 20%;
+}
+
+.button_lucky {
+  width: 145px;
+}
+
+.button_search {
+  width: 129px;
+}
+
+.search {
+  display: flex;
+  height: 44px;
+  width: 582px;
+  padding: 0;
+  margin: 0;
+  align-items: stretch;
+}
+
+.search_bar {
+  border-radius: 24px;
+  border: 1px solid #dfe1e5;
+  width: 100%;
+}
+
+.search_bar:hover {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
 }
