@@ -8,14 +8,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 40.5px 835px 81px;
+  font-family: arial,sans-serif;
+  font-size: small;
 }
 
 nav {
   grid-column: 1 / span 3;
   grid-row: 1 /2;
-  background-color: blue;
-  display: flex;
-  flex-direction: row;
+
 }
 
 main {
@@ -24,6 +24,17 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+ 
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
 }
 button {
   color: #5f6368;
@@ -49,12 +60,19 @@ button:hover {
 footer {
   grid-column: 1 / span 3;
   grid-row: 3 / span 1;
-  background-color: blue;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  
 }
 
 .nav-items {
-  justify-content: start;
-  padding: 7px 7px 0 7px;
+  padding: 14px 14px 0 14px;
+}
+.nav-top-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
 }
 
 .main-items {
@@ -96,3 +114,30 @@ footer {
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   border-color: rgba(223, 225, 229, 0);
 }
+
+.bottom-bars{
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+
+}
+.bar{
+  color: #5f6368;
+  font-size: 14px;
+}
+.bar-top {
+  padding-left: 27px;
+}
+.bot-text{
+  padding-left: 27px;
+}
+.bot-text-right{
+  padding-left: 0px;
+  padding-right: 27px;
+}
+.bar-bot{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
