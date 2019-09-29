@@ -8,14 +8,13 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 40.5px 835px 81px;
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
   font-size: small;
 }
 
 nav {
   grid-column: 1 / span 3;
   grid-row: 1 /2;
-
 }
 
 main {
@@ -29,7 +28,6 @@ main {
 a:link {
   text-decoration: inherit;
   color: inherit;
- 
 }
 
 a:visited {
@@ -63,16 +61,44 @@ footer {
   background: #f2f2f2;
   border-top: 1px solid #e4e4e4;
   border-bottom: 1px solid #e4e4e4;
-  
 }
 
 .nav-items {
   padding: 14px 14px 0 14px;
 }
-.nav-top-right{
+.nav-top-right {
   display: flex;
   flex-direction: row;
   justify-content: end;
+ padding-right: 15px;
+ padding-left: 15px;
+ padding-top: 10px; 
+  align-items: center;
+}
+.gmail_logo {
+  height: 32px;
+  width: 32px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 9px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #00897b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  cursor: pointer;
+}
+.gmail_text {
+  color: white;
+}
+
+.squares {
+  background-image: url("squares.png");
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
 }
 
 .main-items {
@@ -115,29 +141,27 @@ footer {
   border-color: rgba(223, 225, 229, 0);
 }
 
-.bottom-bars{
+.bottom-bars {
   display: flex;
   flex-direction: column;
   line-height: 40px;
-
 }
-.bar{
+.bar {
   color: #5f6368;
   font-size: 14px;
 }
 .bar-top {
   padding-left: 27px;
 }
-.bot-text{
+.bot-text {
   padding-left: 27px;
 }
-.bot-text-right{
+.bot-text-right {
   padding-left: 0px;
   padding-right: 27px;
 }
-.bar-bot{
+.bar-bot {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
